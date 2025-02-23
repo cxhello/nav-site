@@ -1,0 +1,197 @@
+{
+  "categories": [
+    {
+        "id": "ai",
+        "name": "AI",
+        "items": [
+          {
+            "name": "DeepSeek",
+            "url": "https://chat.deepseek.com",
+            "description": "探索未至之境",
+            "tags": ["Chat"]
+          },
+          {
+            "name": "ChatGPT",
+            "url": "https://chatgpt.com",
+            "description": "",
+            "tags": ["Chat"]
+          },
+          {
+            "name": "Claude",
+            "url": "https://claude.ai",
+            "description": "",
+            "tags": ["Chat"]
+          },
+          {
+            "name": "Gemini",
+            "url": "https://gemini.google.com",
+            "description": "",
+            "tags": ["Chat"]
+          },
+          {
+            "name": "Perplexity",
+            "url": "https://www.perplexity.ai",
+            "description": "",
+            "tags": ["Chat"]
+          },
+          {
+            "name": "豆包",
+            "url": "https://www.doubao.com",
+            "description": "字节跳动旗下 AI 智能助手",
+            "tags": ["Chat"]
+          },
+          {
+            "name": "Kimi",
+            "url": "https://kimi.moonshot.cn",
+            "description": "会推理解析，能深度思考的AI助手",
+            "tags": ["Chat"]
+          },
+
+          {
+            "name": "Cursor",
+            "url": "https://www.cursor.com",
+            "description": "The AI Code Editor",
+            "tags": ["Code Editor"]
+          },
+          {
+            "name": "Windsurf",
+            "url": "https://codeium.com/windsurf",
+            "description": "",
+            "tags": ["Code Editor"]
+          },
+          {
+            "name": "Dify.AI",
+            "url": "https://dify.ai",
+            "description": "",
+            "tags": ["Agent"]
+          },
+          {
+            "name": "Coze",
+            "url": "https://www.coze.com",
+            "description": "Next-Gen AI App Developing Platform",
+            "tags": ["Agent"]
+          }
+        ]
+      },
+    {
+      "id": "design",
+      "name": "Design",
+      "items": [
+        {
+          "name": "MasterGo",
+          "url": "https://mastergo.com",
+          "description": "AI 时代的数字界面生产平台",
+          "tags": ["Design Tool", "Collaborative"]
+        },
+        {
+            "name": "Figma",
+            "url": "https://www.figma.com",
+            "description": "The Collaborative Interface Design Tool",
+            "tags": ["Design Tool", "Collaborative"]
+          },
+        {
+          "name": "Canva",
+          "url": "https://www.canva.com",
+          "description": "",
+          "tags": ["Design Tool"]
+        },
+        {
+          "name": "Midjourney",
+          "url": "https://www.midjourney.com",
+          "description": "",
+          "tags": ["Image"]
+        },
+        {
+          "name": "Whisk",
+          "url": "https://labs.google/fx/zh/tools/whisk",
+          "description": "",
+          "tags": ["Image"]
+        },
+        {
+          "name": "v0.dev",
+          "url": "https://v0.dev",
+          "description": "",
+          "tags": ["Page"]
+        },
+        {
+          "name": "Bolt.new",
+          "url": "https://bolt.new",
+          "description": "",
+          "tags": ["Page"]
+        },
+        {
+          "name": "讯飞智文",
+          "url": "https://zhiwen.xfyun.cn",
+          "description": "AI在线生成PPT、Word",
+          "tags": ["Word", "PPT"]
+        },
+        {
+          "name": "木及简历",
+          "url": "https://www.mujicv.com/",
+          "description": "在线 Markdown 简历制作工具",
+          "tags": ["Resume"]
+        }
+      ]
+    },
+    {
+        "id": "cloud",
+        "name": "Cloud",
+        "items": [
+        {
+            "name": "GitHub",
+            "url": "https://github.com",
+            "description": "",
+            "tags": ["Develop"]
+          },
+          {
+            "name": "Vercel",
+            "url": "https://vercel.com",
+            "description": "",
+            "tags": ["Deploy"]
+          },
+          {
+            "name": "Cloudflare",
+            "url": "https://cloudflare.com",
+            "description": "",
+            "tags": ["Deploy"]
+          },
+          {
+            "name": "Firebase",
+            "url": "https://firebase.google.com",
+            "description": "",
+            "tags": ["Database"]
+          },
+          {
+            "name": "Google AdSense",
+            "url": "https://www.google.com/adsense",
+            "description": "",
+            "tags": ["Deploy"]
+          }
+        ]
+    },
+    {
+        "id": "website",
+        "name": "Website",
+        "items": [
+          {
+            "name": "V2EX",
+            "url": "https://v2ex.com",
+            "description": "",
+            "tags": ["Community"]
+          },
+          {
+            "name": "酷壳",
+            "url": "https://coolshell.cn",
+            "description": "",
+            "tags": ["Blog"]
+          },
+          {
+            "name": "阮一峰的个人网站",
+            "url": "https://ruanyifeng.com",
+            "description": "",
+            "tags": ["Blog"]
+          }   
+        ]
+    }
+  ]
+} 
