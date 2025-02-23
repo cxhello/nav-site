@@ -70,11 +70,21 @@ export default function NavCard({ item, onTagClick }: NavCardProps) {
     onTagClick?.(tag);
   };
 
+  const handleClick = (name: string, url: string) => {
+    // 跟踪外链点击
+    window.gtag?.('event', 'click', {
+      event_category: 'outbound',
+      event_label: name,
+      value: url
+    });
+  };
+
   return (
     <a
       href={item.url}
       target="_blank"
       rel="noopener noreferrer"
+      onClick={() => handleClick(item.name, item.url)}
       className="group block p-4 bg-white dark:bg-gray-800 rounded-xl shadow-sm 
                  hover:shadow-lg transition-all duration-300 transform hover:scale-105"
     >

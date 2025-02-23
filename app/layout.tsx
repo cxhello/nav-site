@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Analytics } from '@vercel/analytics/react';
+import Script from 'next/script';
 import "./globals.css";
 
 const geistSans = Geist({
@@ -27,6 +29,7 @@ export const metadata: Metadata = {
   manifest: "/manifest.json",
   other: {
     'google-adsense-account': 'ca-pub-7494326995438759',
+    'google-site-verification': 'KhKDus6f2QUcSZmpi612EhB36fPo_UIS4EfskWE0kZk', // 替换为你的 Search Console 验证码
   },
 };
 
@@ -37,7 +40,27 @@ export default function RootLayout({
 }) {
   return (
     <html lang="zh-CN" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <body>{children}</body>
+      <head>
+        <Script
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=G-3PPREHSQ0R`} // 替换为你的实际 Measurement ID
+        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+        >
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-3PPREHSQ0R'); // 替换为你的实际 Measurement ID
+          `}
+        </Script>
+      </head>
+      <body>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
