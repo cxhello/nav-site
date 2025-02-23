@@ -25,6 +25,9 @@ export const metadata: Metadata = {
     ],
   },
   manifest: "/manifest.json",
+  other: {
+    'google-adsense-account': 'ca-pub-7494326995438759',
+  },
 };
 
 export default function RootLayout({
