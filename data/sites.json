@@ -130,6 +130,12 @@
           "url": "https://www.mujicv.com/",
           "description": "在线 Markdown 简历制作工具",
           "tags": ["Resume"]
+        },
+        {
+          "name": "Excalidraw",
+          "url": "https://excalidraw.com",
+          "description": "",
+          "tags": ["Draw"]
         }
       ]
     },
@@ -150,6 +156,12 @@
             "tags": ["Deploy"]
           },
           {
+            "name": "Netlify",
+            "url": "https://www.netlify.com",
+            "description": "",
+            "tags": ["Deploy"]
+          },
+          {
             "name": "Cloudflare",
             "url": "https://cloudflare.com",
             "description": "",
@@ -162,6 +174,18 @@
             "tags": ["Database"]
           },
           {
+            "name": "Google Analytics",
+            "url": "https://analytics.google.com",
+            "description": "",
+            "tags": ["Analytics"]
+          },
+          {
+            "name": "Google Search",
+            "url": "https://search.google.com/search-console",
+            "description": "",
+            "tags": ["Analytics"]
+          },
+          {
             "name": "Google AdSense",
             "url": "https://www.google.com/adsense",
             "description": "",
@@ -171,7 +195,7 @@
     },
     {
         "id": "website",
-        "name": "Website",
+        "name": "WebSite",
         "items": [
           {
             "name": "V2EX",
@@ -190,8 +214,92 @@
             "url": "https://ruanyifeng.com",
             "description": "",
             "tags": ["Blog"]
-          }   
+          },
+          {
+            "name": "开源软件指南",
+            "url": "https://opensource.guide/zh-hans",
+            "description": "",
+            "tags": ["Blog"]
+          },
+          {
+            "name": "野卡",
+            "url": "https://yeka.ai",
+            "description": "野卡 | 一分钟注册，轻松订阅海外软件服务",
+            "tags": ["Tools"]
+          },
+          {
+            "name": "在线工具",
+            "url": "https://tool.lu",
+            "description": "",
+            "tags": ["Tools"]
+          },
+          {
+            "name": "从YouTube下载视频和音频",
+            "url": "https://www.y2mate.com/zh-cn/youtube/23ltYvAzuCY",
+            "description": "",
+            "tags": ["Tools"]
+          },
+          {
+            "name": "SaveTube",
+            "url": "https://save.tube",
+            "description": "",
+            "tags": ["Tools"]
+          },
+          {
+            "name": "LKs 网站推荐合集",
+            "url": "https://lkssite.vip",
+            "description": "",
+            "tags": ["Tools"]
+          },
+          {
+            "name": "素白白影视",
+            "url": "https://subaibai.vip",
+            "description": "",
+            "tags": ["Movie"]
+          },
+          {
+            "name": "Unsplash",
+            "url": "https://unsplash.com",
+            "description": "",
+            "tags": ["Wallpapers"]
+          },
+          {
+            "name": "Pexels",
+            "url": "https://www.pexels.com",
+            "description": "",
+            "tags": ["Wallpapers"]
+          }
         ]
-    }
+    },
+    {
+      "id": "about",
+      "name": "About",
+      "items": [
+        {
+          "name": "Cuthbert's Blog",
+          "url": "https://cxhello.top",
+          "description": "",
+          "tags": ["Blog"]
+        },
+        {
+          "name": "Cuthbert's Jike",
+          "url": "https://jike.city/cxhello",
+          "description": "",
+          "tags": ["Blog"]
+        },
+        {
+          "name": "AI Chat",
+          "url": "https://ai.cxhello.top",
+          "description": "",
+          "tags": ["Chat"]
+        },
+        {
+          "name": "MomentGif",
+          "url": "https://apps.apple.com/cn/app/momentgif/id6739975261",
+          "description": "",
+          "tags": ["App"]
+        }
+      ]
+  }
   ]
 } 
