@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import ThemeToggle from './ThemeToggle';
 
 export default function Header({ onSearch }: { onSearch: (query: string) => void }) {
