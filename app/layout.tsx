@@ -28,8 +28,8 @@ export const metadata: Metadata = {
   },
   manifest: "/manifest.json",
   other: {
-    'google-adsense-account': 'ca-pub-7494326995438759',
-    'google-site-verification': 'KhKDus6f2QUcSZmpi612EhB36fPo_UIS4EfskWE0kZk', // 替换为你的 Search Console 验证码
+    'google-adsense-account': process.env.NEXT_PUBLIC_ADSENSE_ID,
+    'google-site-verification': process.env.NEXT_PUBLIC_GSC_VERIFICATION,
   },
 };
 
@@ -43,7 +43,7 @@ export default function RootLayout({
       <head>
         <Script
           strategy="afterInteractive"
-          src={`https://www.googletagmanager.com/gtag/js?id=G-3PPREHSQ0R`} // 替换为你的实际 Measurement ID
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}
         />
         <Script
           id="google-analytics"
@@ -53,7 +53,7 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-3PPREHSQ0R'); // 替换为你的实际 Measurement ID
+            gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
           `}
         </Script>
       </head>
