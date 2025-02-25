@@ -168,28 +168,52 @@
             "tags": ["Deploy"]
           },
           {
+            "name": "Spaceship",
+            "url": "https://spaceship.com",
+            "description": "",
+            "tags": ["Deploy"]
+          },
+          {
+            "name": "GoDaddy",
+            "url": "https://www.godaddy.com",
+            "description": "",
+            "tags": ["Deploy"]
+          },
+          {
             "name": "Firebase",
             "url": "https://firebase.google.com",
             "description": "",
             "tags": ["Database"]
           },
           {
+            "name": "Google AdSense",
+            "url": "https://www.google.com/adsense",
+            "description": "",
+            "tags": ["Deploy"]
+          },
+          {
+            "name": "Google Trends",
+            "url": "https://trends.google.com",
+            "description": "",
+            "tags": ["SEO"]
+          },
+          {
             "name": "Google Analytics",
             "url": "https://analytics.google.com",
             "description": "",
-            "tags": ["Analytics"]
+            "tags": ["SEO"]
           },
           {
             "name": "Google Search",
             "url": "https://search.google.com/search-console",
             "description": "",
-            "tags": ["Analytics"]
+            "tags": ["SEO"]
           },
           {
-            "name": "Google AdSense",
-            "url": "https://www.google.com/adsense",
+            "name": "Ahrefs",
+            "url": "https://ahrefs.com/keyword-difficulty",
             "description": "",
-            "tags": ["Deploy"]
+            "tags": ["SEO"]
           }
         ]
     },
@@ -268,6 +292,12 @@
             "url": "https://www.pexels.com",
             "description": "",
             "tags": ["Wallpapers"]
+          },
+          {
+            "name": "Duolingo",
+            "url": "https://duolingo.com",
+            "description": "",
+            "tags": ["learn"]
           }
         ]
     },
