@@ -10,8 +10,13 @@ import { Category } from '@/types/navigation';
 
 export default function Home() {
   const [searchQuery, setSearchQuery] = useState('');
-  const [activeCategory, setActiveCategory] = useState('all'); // 默认显示全部
+  const [activeCategory, setActiveCategory] = useState('all');
   const [filteredCategories, setFilteredCategories] = useState<Category[]>(siteData.categories);
+
+  // 处理搜索
+  const handleSearch = (query: string) => {
+    setSearchQuery(query);
+  };
 
   // 处理标签点击
   const handleTagClick = (tag: string) => {
@@ -30,9 +35,6 @@ export default function Home() {
         )
       }))
       .filter(category => 
-        // 如果有搜索词，显示所有匹配的项目
-        // 如果是"全部"分类或有搜索词，显示所有分类
-        // 否则只显示当前选中的分类
         searchQuery || activeCategory === 'all' ? category.items.length > 0 : category.id === activeCategory
       );
     
@@ -41,9 +43,20 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex flex-col bg-gray-50 dark:bg-gray-900">
-      <Header onSearch={setSearchQuery} />
+      {/* 搜索框和暗黑模式切换按钮 */}
+      <Header onSearch={handleSearch} />
       
       <main className="flex-1 container mx-auto px-4 py-8">
+        {/* 标题和介绍文本 */}
+        <div className="max-w-4xl mx-auto text-center px-4 py-8">
+          <h1 className="text-2xl md:text-3xl font-bold mb-4 text-gray-900 dark:text-white">
+            AI Navigation - 精选人工智能工具导航
+          </h1>
+          <p className="text-gray-600 dark:text-gray-300 mb-8">
+            欢迎来到 AI Navigation，这里汇集了当下最实用的人工智能工具和资源。从 DeepSeek、ChatGPT、Claude 等智能对话助手，到 Midjourney 等 AI 绘画工具，再到各类 AI 编程和设计工具，帮助您快速发现和使用最适合的 AI 工具，提升工作效率和创意表达。
+          </p>
+        </div>
+        
         {/* 分类导航 */}
         <div className="flex gap-4 overflow-x-auto pb-4 sticky top-20 bg-gray-50 dark:bg-gray-900 z-40">
           <button
